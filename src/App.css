@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body {
+  background-color: #f8f9fa; /* Soft light gray background */
+  font-family: 'Arial', sans-serif;
+  color: #495057; /* Dark gray text for good readability */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 800px;
+  margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Card Style for Checklist */
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Button Styles */
+.btn-primary, .btn-success {
+  background-color: #5cb85c; /* Calming green */
+  border-color: #4cae4c;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-primary:hover, .btn-success:hover {
+  background-color: #4cae4c;
+  border-color: #398439;
+}
+
+/* Input Fields */
+.form-control {
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+/* Custom Card Header for Checklist */
+.card-header {
+  background-color: #e3f2fd; /* Light blue */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Smooth Transitions */
+.btn, .form-control, .card {
+  transition: all 0.3s ease;
+}
+
+/* Align elements vertically */
+.d-flex-align-center {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul.list-group-item {
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
